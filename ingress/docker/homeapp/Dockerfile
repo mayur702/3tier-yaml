@@ -14,12 +14,6 @@ WORKDIR /var/www/html
 # Copy the HTML and CSS files into the /var/www/html/home directory
 COPY index.html home/
 COPY styles.css home/
-
-# Add ServerName directive to suppress the warning
 RUN echo "ServerName localhost" >> /etc/httpd/conf/httpd.conf
-
-# Expose port 80 to the outside world
 EXPOSE 80
-
-# Start Apache HTTP Server in the foreground when the container starts
 CMD ["httpd", "-D", "FOREGROUND"]
