@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: homeapp
-        image: mayur702/ingress:
+        image: mayur702/ingress:homeapp
         resources:
           limits:
             memory: "128Mi"
