@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -20,7 +19,7 @@ spec:
     spec:
       containers:
       - name: mobileapp
-        image: mayur702/ingress:homeapp
+        image: mayur702/ingress:mobileapp
         resources:
           limits:
             memory: "128Mi"
